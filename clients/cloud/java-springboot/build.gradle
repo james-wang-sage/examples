@@ -1,6 +1,6 @@
 buildscript {
   repositories {
-    jcenter()
+    mavenCentral()
   }
   dependencies {
     classpath 'com.commercehub.gradle.plugin:gradle-avro-plugin:0.15.1'
@@ -14,7 +14,7 @@ plugins {
 }
 
 repositories {
-  jcenter()
+  mavenCentral()
 
   maven {
     url 'https://packages.confluent.io/maven'
@@ -28,12 +28,12 @@ group = 'io.confluent.examples.clients.cloud'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '8'
 
-bootJar {
-  mainClassName = "io.confluent.examples.clients.cloud.springboot.kafka.SpringbootKafkaApplication"
+springBoot {
+  mainClassName = "io.confluent.examples.clients.cloud.springboot.kafka.SpringBootKafkaApplication"
 }
 
 repositories {
-  jcenter()
+  mavenCentral()
 }
 
 dependencies {

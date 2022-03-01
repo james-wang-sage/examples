@@ -9,20 +9,20 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class SpringbootKafkaApplication {
 
-  // injected from application.properties
-  @Value("${io.confluent.developer.config.topic.name}")
-  private String topicName;
-
-  @Value("${io.confluent.developer.config.topic.partitions}")
-  private int numPartitions;
-
-  @Value("${io.confluent.developer.config.topic.replicas}")
-  private int replicas;
-
-  @Bean
-  NewTopic moviesTopic() {
-    return new NewTopic(topicName, numPartitions, (short) replicas);
-  }
+//  // injected from application.properties
+//  @Value("${io.confluent.developer.config.topic.name}")
+//  private String topicName;
+//
+//  @Value("${io.confluent.developer.config.topic.partitions}")
+//  private int numPartitions;
+//
+//  @Value("${io.confluent.developer.config.topic.replicas}")
+//  private int replicas;
+//
+//  @Bean
+//  NewTopic moviesTopic() {
+//    return new NewTopic(topicName, numPartitions, (short) replicas);
+//  }
 
   public static void main(final String[] args) {
     SpringApplication.run(SpringbootKafkaApplication.class, args);
