@@ -1,3 +1,4 @@
+clients/cloud/java-springboot/src/main/resources/application.properties
 **/.idea/
 **/kafka-streams-examples
 **/delta_configs/
@@ -33,6 +34,4 @@ ccloud/beginner-cloud/.ignored_folder/*
 !ccloud/beginner-cloud/.ignored_folder/.gitkeep
 ccloud-observability/target/*
 ccloud-observability/.env
-clients/cloud/java-springboot/src/main/resources/application.properties
-*.properties
 
