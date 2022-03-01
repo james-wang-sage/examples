@@ -34,3 +34,5 @@ ccloud/beginner-cloud/.ignored_folder/*
 ccloud-observability/target/*
 ccloud-observability/.env
 clients/cloud/java-springboot/src/main/resources/application.properties
+*.properties
+
